@@ -149,7 +149,7 @@ public:
 	}
 
 	/* This is one of the important methods, where a single constraint between two particles p1 and p2 is solved
-	the method is called by Flag.time_step() many times per frame*/
+	the spring model is very simplified we don't take into account elasticity value or fluid friction(air) */
 	void satisfyConstraint()
 	{
 		Vec3 p1_to_p2 = p2->getPos()-p1->getPos(); // vector from p1 to p2
